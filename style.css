@@ -1,0 +1,31 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c362f;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+@media (max-width: 599px) {
+    .logo {
+        max-width: 250px; /* Adjusted max-width for smaller screens */
+    }
+}
+
+.message {
+    font-size: 24px;
+    font-weight: bold;
+}
