@@ -483,7 +483,7 @@ section {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 .section-header .section-description {
@@ -549,7 +549,7 @@ section {
 }
 
 /* About Us Section
---------------------------------*/
+--------------------------------
 #about {
   background: #fff;
   padding: 80px 0;
@@ -628,13 +628,13 @@ section {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
-}
+}*/
 
 /* Facts Section
 --------------------------------*/
 #facts {
   background: #f7f7f7;
-  padding: 80px 0 60px 0;
+  padding: 50px 0 50px 0;
 }
 
 #facts .counters span {
@@ -655,7 +655,7 @@ section {
 #services {
   background: #fff;
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 50px 0 50px 0;
 }
 
 #services .box {
@@ -730,7 +730,7 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/call-to-action-bg.jpg'); 
   background-position:  center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 95px 0;
 }
 
 @media (max-width: 1024px) {
@@ -781,7 +781,7 @@ section {
 --------------------------------*/
 #portfolio {
   background: #f7f7f7;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 #portfolio #portfolio-flters {
@@ -814,6 +814,10 @@ section {
 
 #portfolio #portfolio-flters li:last-child {
   margin-right: 0;
+}
+
+#portfolio .section-title {
+  padding-bottom: 20px;
 }
 
 #portfolio .portfolio-item {
@@ -871,7 +875,8 @@ section {
 }
 
 #portfolio .portfolio-item:hover img {
-  top: -30px;
+  top: -15px;
+  cursor: pointer;
 }
 
 #portfolio .portfolio-item:hover .portfolio-info {
@@ -881,7 +886,7 @@ section {
 
 /*--------------------------------------------------------------
 # Portfolio Details
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .portfolio-details {
   padding-top: 40px;
 }
@@ -942,10 +947,10 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+}*/
 
 /* Team Section
---------------------------------*/
+--------------------------------
 #team {
   background: #fff;
   padding: 80px 0 60px 0;
@@ -993,13 +998,17 @@ section {
 #team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
+}*/
 
 /* Contact Section
 --------------------------------*/
 #contact {
   background: #f7f7f7;
-  padding: 80px 0 40px 0;
+  padding: 50px 0 40px 0;
+}
+
+#contact .section-header .section-description {
+  padding-bottom: 8px;
 }
 
 #contact .info {
@@ -1105,7 +1114,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #343b40;
-  padding: 30px 0;
+  padding: 20px 0;
   color: #fff;
   font-size: 14px;
 }
