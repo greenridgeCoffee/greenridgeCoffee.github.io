@@ -236,7 +236,7 @@
 
 
 //HERO SECTION TYPING EFFECT
-const messages = ["grown in rich Ethiopian soil.", "meticulously graded 90+.", "sourced with standards fairer than fair trade.", "packaged beautifully."];
+const messages = ["meticulously graded 90+.", "grown in cup of excellence caliber microlots.", "that comes with personalized roasting and brewing guidance."];
 let currentMessage = 0;
 let letterIndex = 0;
 let currentDirection = 'forward';
