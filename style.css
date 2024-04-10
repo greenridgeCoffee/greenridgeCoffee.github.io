@@ -107,6 +107,13 @@ h6 {
   max-width: 400px;
 }
 
+/* Change which logo appears on mobile devices */
+@media (max-width: 451px) {
+  #header #logo img {
+    max-width: 275px;
+  }
+}
+
 #header.header-transparent {
   background: transparent;
 }
@@ -283,6 +290,10 @@ h6 {
   .navbar ul {
     display: none;
   }
+
+  .navPipe {
+    display: none;
+  }
 }
 
 .navbar-mobile {
@@ -308,10 +319,10 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
+  /*bottom: 15px; */
+  /*left: 15px; */
+  padding: 15px 5px; /* 15px 5px */
+  background-color: #1c362f;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -326,11 +337,17 @@ h6 {
   visibility: hidden;
 }
 
-.navbar-mobile a,
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #fff;
+}
+
+
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #666666;
+  color: #fff;
 }
 
 .navbar-mobile a:hover,
@@ -699,12 +716,12 @@ section {
 }
 
 #services .box:hover .icon {
-  background: #fff;
+  background: #73956F;
   border: 2px solid #73956F;
 }
 
 #services .box:hover .icon i {
-  color: #73956F;
+  color: #fff;
 }
 
 #services .box:hover .icon a {
@@ -886,6 +903,14 @@ section {
   opacity: 1;
   bottom: 0;
 }
+
+/* Images in the slider for laptop/desktop */
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
