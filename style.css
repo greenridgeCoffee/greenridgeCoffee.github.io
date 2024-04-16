@@ -509,7 +509,7 @@ section {
 .section-header .section-description {
   text-align: center;
   padding-bottom: 40px;
-  color: #999;
+  color: #333333;
 }
 
 /*--------------------------------------------------------------
@@ -683,7 +683,7 @@ section {
   margin-bottom: 50px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 240px;
+  height: 285px;
   position: relative;
   background: #fafafa;
 }
@@ -740,8 +740,9 @@ section {
 }
 
 #services .description {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
+  color: #333333
 }
 
 /* Call To Action Section
