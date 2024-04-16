@@ -464,21 +464,10 @@
     gtag('config', 'G-FYM5FK2202');
   </script>
 
-  <!-- Main JS File -->
-  <script src="main.js"></script>
-
-</body>
-
-</html>
-
-
-
-    <!--<link rel="preload" href="https://openai-widget.web.app/ChatComponent.bundle.js" as="script">-->
-
-    <!--OAI Widget Deploying OpenAI Assistant-->
-    <!--
-    <script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
-    <script>
+  <!--OAI Widget Deploying OpenAI Assistant-->
+  <link rel="preload" href="https://openai-widget.web.app/ChatComponent.bundle.js" as="script">
+  <script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Check if the chat container exists
         var chatContainer = document.getElementById('chat-container');
@@ -495,4 +484,11 @@
         console.error('ChatComponent is not available');
         }
     });
-    </script>-->
+  </script>
+
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
