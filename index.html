@@ -464,30 +464,36 @@
     gtag('config', 'G-FYM5FK2202');
   </script>
 
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
   <!--OAI Widget Deploying OpenAI Assistant-->
   <link rel="preload" href="https://openai-widget.web.app/ChatComponent.bundle.js" as="script">
   <script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Check if the chat container exists
+        // Ensure the chat container is present
         var chatContainer = document.getElementById('chat-container');
-        // If the chat container doesn't exist, create it
         if (!chatContainer) {
-        chatContainer = document.createElement('div');
-        chatContainer.id = 'chat-container';
-        document.body.appendChild(chatContainer);
+            chatContainer = document.createElement('div');
+            chatContainer.id = 'chat-container';
+            document.body.appendChild(chatContainer);
         }
+
         // Initialize the Chat component
         if (window.ChatComponent) {
-        ChatComponent.init('rUhhYuVOYKA80ot8aloq','#chat-container');
+            ChatComponent.init('rUhhYuVOYKA80ot8aloq', '#chat-container');
+            // Check for URL parameter and open the widget automatically if the condition is met
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('virtualExpert') === 'true') {
+                ChatComponent.open();  // Make sure this is the correct method to open your widget
+            }
         } else {
-        console.error('ChatComponent is not available');
+            console.error('ChatComponent is not available');
         }
     });
   </script>
 
-  <!-- Main JS File -->
-  <script src="main.js"></script>
 
 </body>
 
