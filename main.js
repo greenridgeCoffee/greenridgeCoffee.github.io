@@ -267,3 +267,34 @@ function typeMessage() {
 
 typeMessage();
 //^END OF HERO SECTION TYPING EFFECT^
+
+// EmailJS Form Submission Send Email
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.email-form');
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      document.querySelector('.loading').style.display = 'block'; // Show loading message
+      document.querySelector('.error-message').style.display = 'none'; // Ensure error message is hidden initially
+      document.querySelector('.sent-message').style.display = 'none'; // Ensure sent message is hidden initially
+
+      const formData = {
+          'name': document.getElementById('name').value,
+          'email': document.getElementById('email').value,
+          'message': document.getElementById('message').value
+      };
+
+      emailjs.send('service_bz1l9zn', 'template_ovlsf7v', formData)
+          .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              document.querySelector('.loading').style.display = 'none'; // Hide loading message
+              document.querySelector('.sent-message').style.display = 'block'; // Show sent message
+          })
+          .catch(function(error) {
+              console.error('FAILED...', error);
+              document.querySelector('.loading').style.display = 'none'; // Hide loading message
+              document.querySelector('.error-message').style.display = 'block'; // Show error message
+          });
+  });
+});
+
+
