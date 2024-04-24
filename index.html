@@ -498,10 +498,7 @@
 
           if (urlParams.get('virtualExpert') === 'true') {
               console.log("Parameter matched, attempting to open widget");
-              // Attempt to delay opening to ensure widget is ready
-              setTimeout(function() {
-                  ChatComponent.open(); // Validate this method name
-              }, 1000); // Delay can be adjusted based on the actual initialization time
+              ChatComponent.show();
           }
       } else {
           console.error('ChatComponent is not available');
