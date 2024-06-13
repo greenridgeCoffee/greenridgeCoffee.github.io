@@ -330,8 +330,8 @@
   <link rel="preload" href="https://openai-widget.web.app/ChatComponent.bundle.js" as="script">
   <script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      console.log("DOM fully loaded and parsed");
+  window.onload = function() {
+      console.log("Page fully loaded");
 
       var chatContainer = document.getElementById('chat-container');
       if (!chatContainer) {
@@ -355,8 +355,9 @@
       } else {
           console.error('ChatComponent is not available');
       }
-  });
+  };
   </script>
+
 
 </body>
 
